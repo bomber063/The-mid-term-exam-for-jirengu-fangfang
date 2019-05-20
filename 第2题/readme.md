@@ -135,7 +135,7 @@ echo 'export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"' >> ~/.
 source ~/.bashrc
 npm i -g node-sass
 ```
-如果在输入一下命令,可以把该目录下的scss文件转换为css目录下面的style.css文件，这里需要**写出详细的输出文件名字**，[英文官网](https://sass-lang.com/guide)上我没有找到针对**windows在node.js**下面的转换，但是在谷歌上面搜报错找到了[信息](https://github.com/armin-pfaeffle/sass-autocompile/issues/86)，在谷歌上面搜node-sass也可以找[信息](https://github.com/sass/node-sass)  
+如果在输入一下命令,可以把该目录下的scss文件转换为css目录下面的style.css文件，这里需要**写出详细的输出文件名字**，[英文官网](https://sass-lang.com/guide)和谷歌搜索sass中文后找到的[网站](https://www.sasscss.com/)上我没有找到针对**windows在node.js**下面的转换，但是在谷歌上面搜报错找到了[信息](https://github.com/armin-pfaeffle/sass-autocompile/issues/86)，在谷歌上面搜node-sass也可以找[信息](https://github.com/sass/node-sass)  
 ```
 $ node-sass style.scss ../css/style.css
 ```
@@ -217,7 +217,7 @@ $designWidth : 640;
 
 当然还可以算出各个属性值与父元素的关系，因为width的百分比是与父元素的宽度有关，height的百分比是与父元素的高度有关，margin和padding是与父元素的宽度有关，但是父元素并不是页面的根元素，这样并不能与整个网页达到适配的效果，那么就会有巨大的分析与计算量。  
 
-####手机端的交互方式不一样
+#### 手机端的交互方式不一样
 * 没有 hover  
 * 有 touch 事件  
 * 没有 resize  
