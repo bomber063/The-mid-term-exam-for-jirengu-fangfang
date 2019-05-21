@@ -8,7 +8,7 @@
   border-radius: 20px;
 ```
 # 实现阴影怎么做?
-阴影可以用[box-shadow]属性(https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow)。
+阴影可以用[box-shadow属性](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow)。
 比如下面代码就是给class为shadow的类增加一个阴影  
 ```
 .shadow{
