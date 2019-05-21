@@ -59,12 +59,12 @@ var names2={
     name: "bomber2"
 }
 var a=names1.output.bind(names2)//这里的names2就是this
-a.call(names1,'参数1','参数2')//这里通过call调用把this修改为nams1已经没有用了.
+a.call(names1,'参数1','参数2')//这里通过call调用把this修改为names1已经没有用了.
 //最后的结果是bomber2参数1参数2
 ```
 
 ## 其他
 * MDN上对于call的详细解释[链接](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 * MDN上对于apply的详细解释[链接](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
-* MDN上对于bind的详细解释[链接](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind#Polyfill)
+* MDN上对于bind的详细解释[链接](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 * 方方对于this的说明文章[链接](https://zhuanlan.zhihu.com/p/23804247)
