@@ -6,8 +6,8 @@
 
 **闭包就是声明一个不能被全局变量覆盖，并且别人访问不到，但是可以通过访问器（函数）访问的方式**。
 ## 举几个例子：
-比如这个代码
-window.奖励一条命对应的匿名函数和var lives=50构成一个闭包，window.死一条命对应的匿名函数和var lives=50构成另一个闭包，这两个闭包的作用可以看出来不同，一个是+1一个是-1。
+比如下面的代码
+* window.奖励一条命对应的匿名函数和var lives=50构成一个闭包，window.死一条命对应的匿名函数和var lives=50构成另一个闭包，这两个闭包的作用可以看出来不同，一个是+1一个是-1。
 ```
 !function(){
   var lives = 50
@@ -24,9 +24,9 @@ var lives=10//就算这里设置了lives和闭包的变量名字一样也不会�
 console.log(window.死一条命())//通过访问器就可以访问到
 console.log(lives)//无法访问闭包里面的lives
 ```
-没有return的闭包，不需要返回信息使用，只需要做一些操作即可。
-一个函数init里面有一个变量name，并且还有一个函数displayName，函数displayName里面没有任何变量。也没有任何返回值。    
-这个变量name和函数displayName组成了闭包。
+* 没有return的闭包，不需要返回信息使用，只需要做一些操作即可。
+* 一个函数init里面有一个变量name，并且还有一个函数displayName，函数displayName里面没有任何变量。也没有任何返回值。    
+* 这个变量name和函数displayName组成了闭包。
 
 ```
 function init() {
@@ -38,9 +38,8 @@ function init() {
 }
 init();//外部只需要调用该init函数就可以执行相应的代码啦
 ```
-有return的闭包，看return是什么，在下面的代码中return是一个函数，所以需要再次调用这个函数才可以执行相应的代码，
-一个函数init里面有一个变量name，并且还有一个函数displayName，函数displayName里面没有任何变量。此时返回了函数 displayName。
-这个变量name和函数displayName组成了闭包。
+* 有return的闭包，看return是什么，在下面的代码中return是一个函数，所以需要再次调用这个函数才可以执行相应的代码，一个函数init里面有一个变量name，并且还有一个函数displayName，函数displayName里面没有任何变量。此时返回了函数 displayName。  
+* 这个变量name和函数displayName组成了闭包。
 
 ```
 function makeFunc() {
@@ -54,8 +53,8 @@ function makeFunc() {
 var myFunc = makeFunc();
 myFunc();//因为返回了是一个displayName函数，所以需要再次调用该函数。
 ```
-在下面的代码中makeAdder函数返回了一个匿名带参数y的函数，匿名函数继续返回x+y这两个参数相加，所以需要再次调用这个函数就可以执行相应的代码。  
-这个参数x和参数y作为外部变量（也就是词法环境），这个匿名函数和两个参数（x和y）组成了闭包。
+* 在下面的代码中makeAdder函数返回了一个匿名带参数y的函数，匿名函数继续返回x+y这两个参数相加，所以需要再次调用这个函数就可以执行相应的代码。  
+* 这个参数x和参数y作为外部变量（也就是词法环境），这个匿名函数和两个参数（x和y）组成了闭包。
 add5 和 add10 都是闭包。它们**共享相同的函数定义，但是保存了不同的词法环境**。在 add5 的环境中，x 为 5。而在 add10 中，x 则为 10。
 ```
 function makeAdder(x) {
@@ -81,4 +80,4 @@ console.log(add10(2)); // 12
 
 * MDN关于闭包说明的[链接](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
 
-* [知乎闭包链接](https://www.zhihu.com/question/34210214)
+* 知乎关于闭包的说明[链接](https://www.zhihu.com/question/34210214)
