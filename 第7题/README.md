@@ -10,4 +10,9 @@ Accept: application/json
 Content-Type: application/x-www-form-urlencoded  
 Content-Length: 24  
      
-username=ff&password=123     
+username=ff&password=123 
+
+# 其他
+* MDN上关于HTTP 请求方法的介绍[链接](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods)  
+* 自己写的HTTP请求和响应介绍博客[链接](https://zhuanlan.zhihu.com/p/51189096)  
+* 自己写HTTP 入门博客[链接](https://zhuanlan.zhihu.com/p/56348309)
