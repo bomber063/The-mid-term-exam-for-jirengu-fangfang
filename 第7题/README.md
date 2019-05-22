@@ -4,10 +4,10 @@
 * 请求的路径为 /path
 
 # 根据题目要求写出如下
-POST /path HTTP/1.1
-Host: baidu.com
-Accept: application/json
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 24
-   
-username=ff&password=123   
+POST /path HTTP/1.1  
+Host: baidu.com  
+Accept: application/json  
+Content-Type: application/x-www-form-urlencoded  
+Content-Length: 24  
+     
+username=ff&password=123     
