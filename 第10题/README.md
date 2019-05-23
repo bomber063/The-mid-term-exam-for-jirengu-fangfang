@@ -7,7 +7,7 @@
 * 不要做多重循环，只能遍历一次
 * 请给出两种方案，一种能在 ES 5 环境中运行，一种能在 ES 6 环境中运行（提示 ES 6 环境多了一个 Set 对象）
 # 方案1
-* 使用**ES5**的使用到的**[indexOf()方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)返回在**数组中可以找到一个给定元素的第一个索引，**如果不存在，则返回-1**。
+* 使用**ES5**的使用到的[indexOf()方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)返回在数组中可以找到一个给定元素的第一个索引，**如果不存在，则返回-1**。
 * 代码如下：  
 ```
 var array = [1, 5, 2, 3, 4, 2, 3, 1, 3, 4]
@@ -24,7 +24,7 @@ console.log(unique(array))
 //unique(array) 的值为 [1,5,2,3,4]
 ```
 # 方案2
-* 同样是使用**ES5**的使用到的****[indexOf()方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)**返回在**数组中可以找到一个给定元素的第一个索引**，如果不存在，则返回-1。
+* 同样是使用**ES5**的使用到的[indexOf()方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)返回在**数组中可以找到一个给定元素的第一个索引**，如果不存在，则返回-1。
 * 代码如下： 
 ```
 var array = [1, 5, 2, 3, 4, 2, 3, 1, 3, 4]
@@ -52,7 +52,7 @@ console.log([...a])
 ```
 # 其他
 ## ES3的方法去重
-* 使用**ES3**的使用到的**[sort()方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)**用原地算法对数组的元素进行排序，并返回数组。
+* 使用**ES3**的使用到的[sort()方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)用原地算法对数组的元素进行排序，并返回数组。
 * sort()不输入任何参数，会使得被排序的数组里面的数值按照从小到大排序，**也就是已经改变了原数组的顺序**。
 * 那么有该方案有两种方式，
 * 第一种方式**对比需要去重的数组经过sort()后的前一个和后一个是否相同**，如果相同就抛弃，如果不同就保留。
