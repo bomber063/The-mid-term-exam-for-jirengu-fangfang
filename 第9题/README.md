@@ -7,7 +7,7 @@
 ## 2. DNS通过解析查询到域名
 * 域名系统（英文：Domain Name System，缩写：DNS）
 * 如果没有缓存，那么一个URL(网址)到IP地址的转换，这个过程就是DNS解析，
-* 网址大概的解析过程为: . -> .com -> qq.com. -> www.qq.com
+* 网址大概的解析过程为: . -> .com -> qq.com. -> www.qq.com  
 也就是从右往左，从根域名到顶级域名然后依次，找到后会返回相应的IP地址。然后存在缓存里面。
 ## 3. TCP/IP链接(三次握手)
 * TCP（Transmission Control Protocol 传输控制协议）是一种面向连接的、可靠的、基于字节流的传输层通信协议。
