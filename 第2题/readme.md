@@ -184,3 +184,24 @@ $designWidth : 640;
 * 有 touch 事件  
 * 没有 resize  
 * 没有滚动条  
+***
+2019.7.9答疑群新旺老师补充
+1. viewport是指用户设备的可视区域的，需要先了解什么是设备像素，什么是CSS像素。
+2. 设备像素就是指屏幕分辨率，举例IPhone6 Plus是1920*1080，它的宽有1080个像素点，但是它的CSS像素就是414px.
+3. 
+```
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0>"
+```
+4. device-witdh就是设备宽度，它和CSS像素是相同的。
+5. 当我们设置width=device-width就是让我们的移动端设备的宽度为对应的CSS像素。
+6. initial-scale属性控制页面最初加载时的缩放比例大小。
+7. maximum-scale，minimum-scale就是最大缩放和最小缩放比例
+8. CSS像素由像素设备比决定
+9. 设备宽度由CSS像素决定
+
+* 面试的时候最好以举例子为准。
+
+* 另外一个[从PX单位到的CSS像素学习链接](https://www.jianshu.com/p/95416caf34b5)
+* [CSS像素、设备独立像素、设备像素之间关系](https://www.cnblogs.com/jiangzilong/p/6700023.html)
+* [MDN在移动浏览器中使用viewport元标签控制布局](https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag)
+***
