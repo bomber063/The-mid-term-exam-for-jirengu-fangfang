@@ -29,15 +29,15 @@ name="viewport"
     }
 }
 ```
-* 使用媒体查询需要注意写在后面的媒体查询会覆盖前面的媒体查询，比如下面的代码，满足最小宽度300px，肯定就满足了最小宽度425px，并且300px写在425px的后面，那么越后面的就会覆盖前面的，这样就不会出现425px的样式了。  
+* 使用媒体查询需要注意写在后面的媒体查询会覆盖前面的媒体查询，比如下面的代码，满足最大宽度300px，肯定就满足了最大宽度425px，并且300px写在425px的后面，那么越后面的就会覆盖前面的，这样就不会出现425px的样式了。  
 ```
-@media (min-width:425px){
+@media (max-width:425px){
     body{
         background:red;
     }
 }
 
-@media (min-width:300px){
+@media (max-width:300px){
     body{
         background:black;
     }
